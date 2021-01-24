@@ -30,10 +30,13 @@ def advance(timer):
     Advance lit LED
     """
     global np, led_index, LED_COLOR
+    # Light LED
     np[led_index] = LED_COLOR
-    led_index += 1
+    # Set index of next LED
     if led_index == np.n:
         led_index = 0
+    else:
+        led_index += 1
 
 
 def fade(timer):
