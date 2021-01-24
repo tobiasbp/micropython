@@ -33,7 +33,7 @@ def advance(timer):
     # Light LED
     np[led_index] = LED_COLOR
     # Set index of next LED
-    if led_index == np.n:
+    if led_index == np.n - 1:
         led_index = 0
     else:
         led_index += 1
